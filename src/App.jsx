@@ -21,6 +21,10 @@ function App() {
     setAmount(convertedAmount)
   }
  
+  const onAmountChange= ()=>{
+    if(amount>=0)
+    setAmount(amount)
+  }
   
   const convert=()=>{
     setConvertedAmount(amount*currencyInfo[to])
